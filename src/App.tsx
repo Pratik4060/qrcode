@@ -8,7 +8,7 @@ type QRItem = {
 };
 
 export default function App() {
-  const [baseUrl, setBaseUrl] = useState('https://full-restaurant-r7rr.vercel.app/');
+  const [baseUrl, setBaseUrl] = useState(import.meta.env.VITE_DEFAULT_URL || '');
   const [startTable, setStartTable] = useState('1');
   const [endTable, setEndTable] = useState('10');
 
